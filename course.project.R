@@ -1,5 +1,4 @@
-#working.dir<-"/Users/chall/Coursera/GettingAndCleaningData/Week3/UCI HAR Dataset/"
-#/Users/chall/Coursera/GettingAndCleaningData/Week3/UCI HAR Dataset
+
 run_analysis<-function(working.dir){
 ## 1. Merge training data with test data ##
     setwd(working.dir)
@@ -25,7 +24,6 @@ run_analysis<-function(working.dir){
     test.data <- cbind(data3,test.subject,data4)
     #Merge training data with test data
     all.data <- rbind(train.data,test.data)
-    #str(all.data)
     
     ## 4. Appropriately labels the data set with descriptive variable names.##
     #Add variable names to merged dataset
@@ -56,13 +54,12 @@ run_analysis<-function(working.dir){
     
     #subsets volunteer subject label, activity label and data for means and stdevs
     subset.cols <- c(subject,activity,mean.data.cols,std.data.cols)
-    #subset.data.cols <-order(as.numeric(c(mean.data.cols,std.data.cols)))
-    ##Trying to order stdevs next to the means not reading as 3 digit integers, need to fix as.numeric or something...
     all.summary.data<-all.data[,c(subset.cols)]
-    #str(all.summary.data)
     colnames(all.summary.data)
+     
     # 5. From the data set in step 4, creates a second, independent tidy data set with 
     #    the average of each variable for each activity and each subject.
+    
     tidy.data<-data.frame() #initialize dataframe
     for(i in 1:30){ #loop over one subject at a time
       for(j in 1:length(activity.label)){ #loop over one activity at a time
@@ -78,8 +75,9 @@ run_analysis<-function(working.dir){
         tidy.data<-rbind(tidy.data,temp.df) #combine subject, activity name and variable means
       }
     }
+    
     names(tidy.data)<-c(colnames(all.summary.data)) #take column names from mean and std subset and use with tidy dataset
     tidy.data
-    
+    #write.table(tidy.data, file="tidyData.txt", row.names=FALSE)
     }
     

@@ -1,5 +1,11 @@
 # GettingAndCleaningData-CourseProject
 Assignment for Coursera: Getting and Cleaning Data
+### course.project.R has one function: run_analysis()
+
+ * Load UCI HAR Dataset and put in your working directory
+ * Open course.project.R in R Studio
+ * run_analysis returns a dataframe with filtered and aggregated data from the UCI HAR Dataset
+
 ### run_analysis function call
 
 * run_analysis takes the argument of your working directory path with the folder that contains the following files:

@@ -2,22 +2,22 @@
 Assignment for Coursera: Getting and Cleaning Data
 ### run_analysis function call
 
-*run_analysis takes the argument of your working directory path with the folder that contains the following files:
-  *activity_labels.txt
-  *course.project.nof.R
-  *features_info.txt
-  *features.txt
-  *README.txt
-  *test
-    *Inertial Signals
-    *subject_test.txt
-    *X_test.txt
-    *y_test.txt
-  *train
-    *Inertial Signals
-    *subject_train.txt
-    *X_train.txt
-    *y_train.txt
+* run_analysis takes the argument of your working directory path with the folder that contains the following files:
+  * activity_labels.txt
+  * course.project.nof.R
+  * features_info.txt
+  * features.txt
+  * README.txt
+  * test
+    * Inertial Signals
+    * subject_test.txt
+    * X_test.txt
+    * y_test.txt
+  * train
+    * Inertial Signals
+    * subject_train.txt
+    * X_train.txt
+    * y_train.txt
 
 ### Load and Read Data
 

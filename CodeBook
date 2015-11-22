@@ -4,11 +4,11 @@
 
 *SubjectLabel
   *Numbers 1-30 that signify unique volunteer subjects
-*Tidy Data Rationale: There are two ways to format the tidy data: by Subject or by Activity. I choose to lead by 
-Subject, whereby relationships between activities with the same subject are immediately apparent. However, through 
-further data manipulation the data can be structed to lead with Activity.*
 * ActivityLabel
     * One of six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) that the 
     Samsung data were collected
-* Body Acceleration, Gravity Acceleration, Body Gyro etc. means and standard deviations etc.
-*
+* 79 columns with filtered by the words 'mean' and 'std' including: Body Acceleration, Gravity Acceleration, Body Gyro etc. means and standard deviations etc.
+   *These values are aggregated data (average of body acceleration, gravity etc.) based off of SubjectLabel and ActivityLabel
+   *These values have three dimensions (x, y & Z)
+   
+ ### For information about run_analysis() see ReadMe file.

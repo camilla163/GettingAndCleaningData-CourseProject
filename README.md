@@ -2,8 +2,7 @@
 Assignment for Coursera: Getting and Cleaning Data
 ### run_analysis function call
 
-*run_analysis takes the argument of your working directory path with the folder
-that contains the following files:
+*run_analysis takes the argument of your working directory path with the folder that contains the following files:
   *activity_labels.txt
   *course.project.nof.R
   *features_info.txt

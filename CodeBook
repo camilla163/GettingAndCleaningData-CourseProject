@@ -1,0 +1,14 @@
+#Code Book GettingAndCleaningData
+
+##Variables in tidyData
+
+*SubjectLabel
+  *Numbers 1-30 that signify unique volunteer subjects
+* Tidy Data Rationale: There are two ways to format the tidy data: by Subject or by Activity. I choose to lead by 
+Subject, whereby relationships between activities with the same subject are immediately apparent. However, through 
+further data manipulation the data can be structed to lead with Activity.*
+*ActivityLabel
+    * One of six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) that the 
+    Samsung data were collected
+*Body Acceleration, Gravity Acceleration, Body Gyro etc. means and standard deviations
+/*
